@@ -1,5 +1,7 @@
 api-request/__pycache__
 api-request/.venv
+.DS_Store
+airflow/.DS_Store
+dbt/logs/dbt.log
 airflow/dags/__pycache__
-.airflow
 postgres/data
