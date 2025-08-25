@@ -1,10 +1,12 @@
 import requests
 
-def make_api_request(url, params=None, headers=None, method='GET', data=None, json=None):
+def make_api_request(params=None, headers=None, method='GET', data=None, json=None):
+    api_url = "http://api.weatherstack.com/current?access_key=07a805ab78dbe6eba43095e7f4b415c6&query=Nairobi"
+    
     try:
         response = requests.request(
             method=method,
-            url=url,
+            url=api_url,
             params=params,
             headers=headers,
             data=data,
@@ -50,6 +52,5 @@ def mock_api_request():
 
 # Example usage:
 if __name__ == "__main__":
-    api_url = "http://api.weatherstack.com/current?access_key=07a805ab78dbe6eba43095e7f4b415c6&query=Nairobi"
-    result = make_api_request(api_url)
+    result = make_api_request()
     print(result)

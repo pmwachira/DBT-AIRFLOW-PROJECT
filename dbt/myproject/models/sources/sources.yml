@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: dev
+    database: db
+    tables:
+      - name: raw_weather_data
+        description: "Raw weather data from api"
+        columns:
+          - name: id
+            description: "id of the weather record"
+          - name: temperature
+            description: "Temperature in degrees Celsius"
+          - name: city
+            description: "City name"
+          - name: wind_speed
+            description: "Wind speed in km/h"
+          - name: weather_description
+            description: "Weather description"
+          - name: time
+            description: "time of the weather record"
+          - name: inserted_at
+            description: "time when the record was inserted"
+          - name: utc_offset
+            description: "UTC offset of the weather record"

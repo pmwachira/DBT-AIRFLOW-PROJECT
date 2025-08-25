@@ -1,0 +1,5 @@
+api-request/__pycache__
+api-request/.venv
+airflow/dags/__pycache__
+.airflow
+postgres/data
