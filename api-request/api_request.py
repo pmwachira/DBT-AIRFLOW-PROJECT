@@ -7,7 +7,7 @@ def make_api_request(params=None, headers=None, method='GET', data=None, json=No
         response = requests.request(
             method=method,
             url=api_url,
-            params=params,
+            params=params,  
             headers=headers,
             data=data,
             json=json,
